@@ -1,5 +1,6 @@
 package com.kk.signupassignment1
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -10,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         // Get references to UI components
         val etName = findViewById<EditText>(R.id.et_name)
-        val etContact = findViewById<EditText>(R.id.et_contact)
+        val etContact = findViewById<EditText>(R.id.etcontact)
         val etEmail = findViewById<EditText>(R.id.et_email)
         val etPassword = findViewById<EditText>(R.id.et_password)
         val etAddress = findViewById<EditText>(R.id.et_address)
